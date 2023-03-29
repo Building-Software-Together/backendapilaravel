@@ -64,6 +64,5 @@
 		<!-- login section End -->
 
 
-        <script src="js/main.js" type="module"></script>
     </body>
 </html>

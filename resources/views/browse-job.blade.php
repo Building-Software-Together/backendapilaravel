@@ -391,6 +391,8 @@
 			</div>
 		</footer>
 
-		<script src="js/main.js"></script>
+        <script type="text/javascript" src="{{ URL('js/main.js') }}"></script>
+        <script type="text/javascript" src="{{ URL('js/md5.min.js') }}"></script>
+        <script type="text/javascript" src="{{ URL('js/bootstrap.min.js') }}"></script>
     </body>
 </html>

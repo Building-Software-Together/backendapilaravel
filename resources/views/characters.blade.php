@@ -91,12 +91,5 @@
       };
     </script>
 
-    <script type="module" src="js/main.js"></script>
-    <script type="module" src="js/md5.min.js"></script>
-    <script type="module" src="js/bootsrap.js"></script>
-    <script type="module" src="js/bootsrap.min.js"></script>
-
-
-
   </body>
 </html>
