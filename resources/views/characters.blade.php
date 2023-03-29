@@ -48,11 +48,11 @@
             data-in="fadeInDown"
             data-out="fadeOutUp"
           >
-            <li id="thehome"><a href="#">Inicio</a></li>
-            <li id="session-li"><a href="#">Iniciar Sesión</a></li>
-            <li id="companiesP"><a href="#">Comapañias</a></li>
-            <li id="premium"><a href="#">Trabajos premium</a></li>
-						<li id="logoutfrom"><a href="#">Cerrar Sesión</a></li>
+            <li id="thehome"><a href="">Inicio</a></li>
+				<li id="session-li"><a href="login">Iniciar Sesión</a></li>
+				<li id="companiesP"><a href="companies">Compañias</a></li>
+				<li id="premium"><a href="characters">Trabajos Premium</a></li>
+				<li id="logoutfrom"><a href="">Cerrar Sesión</a></li>
           </ul>
         </div>
         <!-- /.navbar-collapse -->
