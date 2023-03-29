@@ -7,18 +7,13 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-		<link rel="stylesheet" href="../../resources/css/common.css">
-        <link rel="stylesheet" href="../../resources/css/main.css">
-		<link rel="stylesheet" href="../../resources/css/navbar.css">
-
-        <!-- All Plugin Css -->
-		<link rel="stylesheet" href="../../resources/css/plugins.css">
-        <link href="{{ asset('../../resources/css/plugins.css') }}" rel="stylesheet">
-        <link href="{{ asset('../../resources/css/common.css') }}" rel="stylesheet">
-        <link href="{{ asset('../../resources/css/main.css') }}" rel="stylesheet">
-        <link href="{{ asset('../../resources/css/navbar.css') }}" rel="stylesheet">
-        <link href="{{ asset('../../resources/css/test.css') }}" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{{ url('/css/apicharacters.css') }}" />
+        <link rel="stylesheet" href="{{ url('/css/plugins.css') }}" />
+        <!-- Style & Common Css -->
+        <link rel="stylesheet" href="{{ url('/css/common.css')}}" />
+        <link rel="stylesheet" href="{{ url('/css/main.css')}}" />
+        <link rel="stylesheet" href="{{ url('/css/navbar.css')}}" />
+        <link rel="stylesheet" href="{{ url('/css/apicharacters.css')}}" />
 
 
     </head>
@@ -545,8 +540,6 @@
 <!-- 		<script src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 		<script src="js/bootsnav.js"></script> -->
-		<script src="../js/main.js" type="module"></script>
-        <script type="text/javascript" src="{{ asset('../js/main.js') }}"></script>
-
+        <script type="module" src="js/main.js"></script>
     </body>
 </html>

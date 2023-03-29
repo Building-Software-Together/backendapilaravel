@@ -1,0 +1,199 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Jober Desk | Responsive Job Portal Template</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="{{ url('/css/apicharacters.css') }}" />
+        <link rel="stylesheet" href="{{ url('/css/plugins.css') }}" />
+        <!-- Style & Common Css -->
+        <link rel="stylesheet" href="{{ url('/css/common.css')}}" />
+        <link rel="stylesheet" href="{{ url('/css/main.css')}}" />
+        <link rel="stylesheet" href="{{ url('/css/navbar.css')}}" />
+        <link rel="stylesheet" href="{{ url('/css/apicharacters.css')}}" />
+
+    </head>
+
+    <body>
+
+		<!-- Navigation Start  -->
+		<nav class="navbar navbar-default navbar-sticky bootsnav navbarfixed">
+
+			<div class="container">
+				<!-- Start Header Navigation -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+						<i class="fa fa-bars"></i>
+					</button>
+					<a class="navbar-brand" href="index.html"><img src="img/logo.png" class="logo" alt=""></a>
+				</div>
+				<!-- End Header Navigation -->
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="navbar-menu">
+					<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+							<li id="thehome"><a href="#">Inicio</a></li>
+							<li id="session-li"><a href="#">Iniciar sesión</a></li>
+							<li id="companiesP"><a href="#">Compañias</a></li>
+							<li id="premium"><a href="#">Trabajos premium</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div>
+		</nav>
+		<!-- Navigation End  -->
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+	<section class="inner-banner" style="background:#242c36 url(img/mainbanner.jpg)no-repeat;">
+		<div class="container">
+			<div class="caption">
+				<h2>Consigue tu trabajo</h2>
+				<p>Hay mas de <span>202 Nuevos trabajos!</span></p>
+			</div>
+		</div>
+	</section>
+
+	<section class="jobs">
+		<div class="container">
+			<div class="row heading">
+				<h2>Trabajos populares</h2>
+				<p>Empresas populares estan buscando personal...</p>
+			</div>
+			<div class="companies">
+					<div class="company-list">
+						<div class="row">
+							<div class="col-md-2 col-sm-2">
+								<div class="company-logo">
+									<img src="img/uber-logo.png" class="img-responsive" alt="" />
+								</div>
+							</div>
+							<div class="col-md-10 col-sm-10">
+								<div class="company-content">
+									<h3>IOS Developer<span class="full-time">Full Time</span></h3>
+									<p><span class="company-name"><i class="fa fa-briefcase"></i>Uber</span><span class="company-location"><i class="fa fa-map-marker"></i> 535 Mission St, San Fransisco, California, United States</span><span class="package"><i class="fa fa-money"></i>$22,000-$50,000</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="company-list">
+						<div class="row">
+							<div class="col-md-2 col-sm-2">
+								<div class="company-logo">
+									<img src="img/microsoft.png" class="img-responsive" alt="" />
+								</div>
+							</div>
+							<div class="col-md-10 col-sm-10">
+								<div class="company-content">
+									<h3>Back-End developer<span class="part-time">Part Time</span></h3>
+									<p><span class="company-name"><i class="fa fa-briefcase"></i>Microsoft</span><span class="company-location"><i class="fa fa-map-marker"></i> 7th Avenue, New York, NY, United States</span><span class="package"><i class="fa fa-money"></i>$20,000-$52,000</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="company-list">
+						<div class="row">
+							<div class="col-md-2 col-sm-2">
+								<div class="company-logo">
+									<img src="img/apple.png" class="img-responsive" alt="" />
+								</div>
+							</div>
+							<div class="col-md-10 col-sm-10">
+								<div class="company-content">
+									<h3>UI/UX Designer<span class="freelance">Freelance</span></h3>
+									<p><span class="company-name"><i class="fa fa-briefcase"></i>Apple</span><span class="company-location"><i class="fa fa-map-marker"></i> 7th Avenue, New York, NY, United States</span><span class="package"><i class="fa fa-money"></i>$22,000-$50,000</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="company-list">
+						<div class="row">
+							<div class="col-md-2 col-sm-2">
+								<div class="company-logo">
+									<img src="img/wipro.png" class="img-responsive" alt="" />
+								</div>
+							</div>
+							<div class="col-md-10 col-sm-10">
+								<div class="company-content">
+									<h3>IOS developer<span class="internship">Intership</span></h3>
+									<p><span class="company-name"><i class="fa fa-briefcase"></i>LA Lakers</span><span class="company-location"><i class="fa fa-map-marker"></i> 8th Avenue, Los Angeles, California, United States</span><span class="package"><i class="fa fa-money"></i>$24,000-$52,000</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="company-list">
+						<div class="row">
+							<div class="col-md-2 col-sm-2">
+								<div class="company-logo">
+									<img src="img/twitter.png" class="img-responsive" alt="" />
+								</div>
+							</div>
+							<div class="col-md-10 col-sm-10">
+								<div class="company-content">
+									<h3>Marketing Holder<span class="full-time">Full Time</span></h3>
+									<p><span class="company-name"><i class="fa fa-briefcase"></i>Twitter</span><span class="company-location"><i class="fa fa-map-marker"></i> 4th Avenue, New York, NY, United States</span><span class="package"><i class="fa fa-money"></i>$24,000-$48,000</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<div class="row">
+				<input type="button" class="btn brows-btn" value="Brows All Jobs" />
+			</div>
+		</div>
+	</section>
+
+
+
+		<!-- footer start -->
+		<footer>
+			<div class="container">
+				<div class="col-md-3 col-sm-6">
+					<h4>Elaborado por: </h4>
+				</div>
+
+				<div class="col-md-3 col-sm-6">
+					<h4>Juan Pablo Palomino</h4>
+
+					<ul>
+						<li>Estudiante Ing. en Sistemas</li>
+						<li><a href="mailto:juan.palomino@upb.edu.co">Email: juan.palomino@upb.edu.co</a></li>
+						<li>Tel: 311304940</li>
+					</ul>
+
+				</div>
+
+				<div class="col-md-3 col-sm-6">
+					<h4>Andres Romaña</h4>
+					<ul>
+					<li>Estudiante Ing. en Sistemas</li>
+					<li><a href="mailto:andres.romana@upb.edu.co">Email: andres.romana@upb.edu.co</a></li>
+					<li>Tel: 311407406</li>
+					</ul>
+				</div>
+
+				<div class="col-md-3 col-sm-6">
+					<h4>Envianos un Correo</h4>
+					<form>
+						<input type="text" class="form-control input-lg" placeholder="Nombre">
+						<input type="text" class="form-control input-lg" placeholder="Correo...">
+						<textarea class="form-control" placeholder="Mensaje"></textarea>
+						<button type="submit" class="btn btn-primary">Enviar</button>
+					</form>
+				</div>
+
+
+			</div>
+			<div class="copy-right">
+			 <p>&copy;Copyright 2018 Jober Desk | Design By <a href="https://themezhub.com/">ThemezHub</a></p>
+			</div>
+		</footer>
+
+
+		<script src="js/main.js" type="module"></script>
+    </body>
+</html>
