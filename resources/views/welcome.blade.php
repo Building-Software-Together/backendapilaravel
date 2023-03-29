@@ -51,7 +51,7 @@
 				<div class="collapse navbar-collapse" id="navbar-menu">
 					<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
 							<li id="thehome"><a href="#">Inicio</a></li>
-							<li id="session-li"><a href="#">Iniciar Sesión</a></li>
+							<li id="/login"><a href="#">Iniciar Sesión</a></li>
 							<li id="companiesP"><a href="#">Compañias</a></li>
 							<li id="premium"><a href="#">Trabajos Premium</a></li>
 							<li id="logoutfrom"><a href="#">Cerrar Sesión</a></li>
@@ -535,11 +535,5 @@
 			 <p>&copy;Copyright 2018 Jober Desk | Design By <a href="https://themezhub.com/">ThemezHub</a></p>
 			</div>
 		</footer>
-
-		<!-- <script type="text/javascript" src="js/jquery.min.js"></script> -->
-<!-- 		<script src="js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/owl.carousel.min.js"></script>
-		<script src="js/bootsnav.js"></script> -->
-        <script type="module" src="js/main.js"></script>
     </body>
 </html>
