@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,38 +18,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
 
-// return the register view
-Route::get('/register', function () {
-    return view('register');
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-// return the login view
-Route::get('/login', function () {
-    return view('login');
-});
-
-// return the browse-job view
-Route::get('/browse-job', function () {
-    return view('browse-job');
-});
-
-// return the characters view
-Route::get('/characters', function () {
-    return view('characters');
-});
-
-// return the companies view
-Route::get('/companies', function () {
-    return view('companies');
-});
-
-// return the company-detail view
-Route::get('/company-detail', function () {
-    return view('company-detail');
-});
-
-// return the resume view
-Route::get('/resume', function () {
-    return view('resume');
-});
+require __DIR__.'/auth.php';
