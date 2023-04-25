@@ -18,6 +18,23 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/browse-job', function () {
+    return view('browse-job');
+});
+
+Route::get('/companies', function () {
+    return view('companies');
+});
+
+Route::get('/company-detail', function () {
+    return view('company-detail');
+});
+
+Route::get('/resume', function () {
+    return view('resume');
+});
+
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

@@ -48,7 +48,7 @@
             data-in="fadeInDown"
             data-out="fadeOutUp"
           >
-            <li id="thehome"><a href="">Inicio</a></li>
+            <li id="thehome"><a href="/">Inicio</a></li>
 				<li id="session-li"><a href="login">Iniciar Sesión</a></li>
 				<li id="companiesP"><a href="companies">Compañias</a></li>
 				<li id="premium"><a href="characters">Trabajos Premium</a></li>
