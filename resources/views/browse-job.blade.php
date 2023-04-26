@@ -6,6 +6,10 @@
         <title>Jober Desk | Responsive Job Portal Template</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<script src="{{ asset('js/main.js') }}"></script>
+
+
         <link rel="stylesheet" type="text/css" href="{{ url('/css/apicharacters.css') }}" />
         <link rel="stylesheet" href="{{ url('/css/plugins.css') }}" />
         <!-- Style & Common Css -->

@@ -7,8 +7,13 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+		@vite('resources/js/main.js', 'public/css/plugins.css')
+		@vite('resources/js/bootstrap.min.js')
+
+		<script src="{{ asset('js/main.js') }}"></script>
+		<script src="{{ asset('js/bootstrap.min.js') }}"></script>
         <link rel="stylesheet" type="text/css" href="{{ url('/css/apicharacters.css') }}" />
-        <link rel="stylesheet" href="{{ url('/css/plugins.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/plugins.css') }}" />
         <!-- Style & Common Css -->
         <link rel="stylesheet" href="{{ url('/css/common.css')}}" />
         <link rel="stylesheet" href="{{ url('/css/main.css')}}" />
