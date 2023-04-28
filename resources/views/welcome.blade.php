@@ -7,8 +7,9 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		@vite('resources/js/main.js', 'public/css/plugins.css')
+		@vite('resources/js/main.js')
 		@vite('resources/js/bootstrap.min.js')
+		@vite('public/css/plugins.css')
 
 		<script src="{{ asset('js/main.js') }}"></script>
 		<script src="{{ asset('js/bootstrap.min.js') }}"></script>
@@ -19,6 +20,7 @@
         <link rel="stylesheet" href="{{ url('/css/main.css')}}" />
         <link rel="stylesheet" href="{{ url('/css/navbar.css')}}" />
         <link rel="stylesheet" href="{{ url('/css/apicharacters.css')}}" />
+		<link rel="stylesheet" href="{{ url('/css/plugins.css')}}" />
 
 
     </head>
