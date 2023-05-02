@@ -2,21 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use App\Models\Prueba;
 
-class PruebaController extends Controller
+use Illuminate\Http\Request;
+use App\Models\Trabajo;
+
+class TrabajosController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $prueba = new Prueba;
-        $prueba->nombre = "Sanduche";
-        $prueba->precio = 15000;
-        $prueba->descripcion = "Ejemplo";
-        $prueba->save();
+        //
     }
 
     /**
@@ -24,7 +21,14 @@ class PruebaController extends Controller
      */
     public function create()
     {
-        //
+        $trabajo = new Trabajo;
+        $trabajo->logo = "img/uber-logo.png";
+        $trabajo->nombre = "IOS Developer";
+        $trabajo->empresa = "Uber";
+        $trabajo->direccion = "535 Mission St, San Fransisco, California, United States";
+        $trabajo->salario = 30.000;
+        $trabajo->tiempo = "Full Time";
+        $trabajo->save();
     }
 
     /**
@@ -40,10 +44,7 @@ class PruebaController extends Controller
      */
     public function show(string $id)
     {
-        $comm = DB::table('prueba')
-        ->get();
-
-    return view('showCommission', compact('comm') );
+        //
     }
 
     /**

@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\PruebaController;
+
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\TrabajosController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::resource('prueba',PruebaController::class);
+Route::resource('trabajos',TrabajosController::class);
 
 Route::get('/', function () {
     return view('welcome');
