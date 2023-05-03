@@ -8,6 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="{{ url('/css/apicharacters.css') }}" />
         <link rel="stylesheet" href="{{ url('/css/plugins.css') }}" />
+
+		<script src="{{ asset('js/main.js') }}"></script>
         <!-- Style & Common Css -->
         <link rel="stylesheet" href="{{ url('/css/common.css')}}" />
         <link rel="stylesheet" href="{{ url('/css/main.css')}}" />
@@ -27,7 +29,7 @@
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
 						<i class="fa fa-bars"></i>
 					</button>
-					<a class="navbar-brand" href="index.html"><img src="img/logo.png" class="logo" alt=""></a>
+					<a class="navbar-brand" href="/"><img src="img/logo.png" class="logo" alt=""></a>
 				</div>
 				<!-- End Header Navigation -->
 
@@ -38,7 +40,7 @@
 						<li id="session-li"><a href="login">Iniciar Sesión</a></li>
 						<li id="companiesP"><a href="companies">Compañias</a></li>
 						<li id="premium"><a href="characters">Trabajos Premium</a></li>
-						<li id="logoutfrom"><a href="">Cerrar Sesión</a></li>
+						<li id="logoutfrom"><a href="/">Cerrar Sesión</a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div>

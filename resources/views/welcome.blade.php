@@ -7,13 +7,17 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" type="text/css" href="{{ url('/css/apicharacters.css') }}" />
-        <link rel="stylesheet" href="{{ url('/css/plugins.css') }}" />
+		@vite('resources/js/main.js')
+		@vite('resources/js/bootstrap.min.js')
+		@vite('public/css/plugins.css')
+
+		
         <!-- Style & Common Css -->
         <link rel="stylesheet" href="{{ url('/css/common.css')}}" />
         <link rel="stylesheet" href="{{ url('/css/main.css')}}" />
         <link rel="stylesheet" href="{{ url('/css/navbar.css')}}" />
         <link rel="stylesheet" href="{{ url('/css/apicharacters.css')}}" />
+		<link rel="stylesheet" href="{{ url('/css/plugins.css')}}" />
 
 
     </head>
@@ -24,7 +28,7 @@
 
 		<!--Boton ir arriba-->
 		<a class="goup" href="#up" javascript:void(0)  title="Volver arriba">
-			<img class="arrow-icon" src="../img/arrow-up.jpg" width="50" height="50">
+			<img class="arrow-icon" src="{{URL::asset('img/arrow-up.jpg')}}" width="50" height="50">
 
 		</a>
 
@@ -43,18 +47,18 @@
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
 						<i class="fa fa-bars"></i>
 					</button>
-					<a class="navbar-brand" href="index.html"><img src="img/logo.png" class="logo" alt=""></a>
+					<a class="navbar-brand" href="/"><img src="img/logo.png" class="logo" alt=""></a>
 				</div>
 				<!-- End Header Navigation -->
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="navbar-menu">
 					<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-							<li id="thehome"><a href="">Inicio</a></li>
+							<li id="thehome"><a href="/">Inicio</a></li>
 							<li id="session-li"><a href="login">Iniciar Sesión</a></li>
 							<li id="companiesP"><a href="companies">Compañias</a></li>
 							<li id="premium"><a href="characters">Trabajos Premium</a></li>
-							<li id="logoutfrom"><a href="">Cerrar Sesión</a></li>
+							<li id="logoutfrom"><a href="/">Cerrar Sesión</a></li>
 
 					</ul>
 				</div><!-- /.navbar-collapse -->

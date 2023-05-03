@@ -1,6 +1,8 @@
 <?php
 
+
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\TrabajosController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,13 +16,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::resource('trabajos',TrabajosController::class);
+
 Route::get('/', function () {
     return view('welcome');
+});
+
+
+Route::get('/characters', function () {
+    return view('characters');
 });
 
 Route::get('/browse-job', function () {
     return view('browse-job');
 });
+
 
 Route::get('/companies', function () {
     return view('companies');
@@ -32,6 +42,10 @@ Route::get('/company-detail', function () {
 
 Route::get('/resume', function () {
     return view('resume');
+});
+
+Route::get('/companies', function () {
+    return view('companies');
 });
 
 
