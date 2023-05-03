@@ -31,6 +31,11 @@ Route::get('/browse-job', function () {
     return view('browse-job');
 });
 
+
+Route::get('/companies', function () {
+    return view('companies');
+});
+
 Route::get('/company-detail', function () {
     return view('company-detail');
 });
@@ -42,7 +47,6 @@ Route::get('/resume', function () {
 Route::get('/companies', function () {
     return view('companies');
 });
-
 
 
 Route::get('/dashboard', function () {
