@@ -38,7 +38,7 @@
 					<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
                         <li   li id="thehome"><a href="/">Inicio</a></li>
 						<li id="session-li"><a href="login">Iniciar Sesión</a></li>
-						<li id="companiesP"><a href="companies">Compañias</a></li>
+						<li id="companiesP"><a href="trabajos">Compañias</a></li>
 						<li id="premium"><a href="characters">Trabajos Premium</a></li>
 						<li id="logoutfrom"><a href="/">Cerrar Sesión</a></li>
 					</ul>
@@ -57,98 +57,38 @@
 		</div>
 	</section>
 
+	
+		
 	<section class="jobs">
-		<div class="container">
-			<div class="row heading">
-				<h2>Trabajos populares</h2>
-				<p>Empresas populares estan buscando personal...</p>
-			</div>
-			<div class="companies">
-					<div class="company-list">
-						<div class="row">
-							<div class="col-md-2 col-sm-2">
-								<div class="company-logo">
-									<img src="img/uber-logo.png" class="img-responsive" alt="" />
-								</div>
-							</div>
-							<div class="col-md-10 col-sm-10">
-								<div class="company-content">
-									<h3>IOS Developer<span class="full-time">Full Time</span></h3>
-									<p><span class="company-name"><i class="fa fa-briefcase"></i>Uber</span><span class="company-location"><i class="fa fa-map-marker"></i> 535 Mission St, San Fransisco, California, United States</span><span class="package"><i class="fa fa-money"></i>$22,000-$50,000</span></p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="company-list">
-						<div class="row">
-							<div class="col-md-2 col-sm-2">
-								<div class="company-logo">
-									<img src="img/microsoft.png" class="img-responsive" alt="" />
-								</div>
-							</div>
-							<div class="col-md-10 col-sm-10">
-								<div class="company-content">
-									<h3>Back-End developer<span class="part-time">Part Time</span></h3>
-									<p><span class="company-name"><i class="fa fa-briefcase"></i>Microsoft</span><span class="company-location"><i class="fa fa-map-marker"></i> 7th Avenue, New York, NY, United States</span><span class="package"><i class="fa fa-money"></i>$20,000-$52,000</span></p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="company-list">
-						<div class="row">
-							<div class="col-md-2 col-sm-2">
-								<div class="company-logo">
-									<img src="img/apple.png" class="img-responsive" alt="" />
-								</div>
-							</div>
-							<div class="col-md-10 col-sm-10">
-								<div class="company-content">
-									<h3>UI/UX Designer<span class="freelance">Freelance</span></h3>
-									<p><span class="company-name"><i class="fa fa-briefcase"></i>Apple</span><span class="company-location"><i class="fa fa-map-marker"></i> 7th Avenue, New York, NY, United States</span><span class="package"><i class="fa fa-money"></i>$22,000-$50,000</span></p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="company-list">
-						<div class="row">
-							<div class="col-md-2 col-sm-2">
-								<div class="company-logo">
-									<img src="img/wipro.png" class="img-responsive" alt="" />
-								</div>
-							</div>
-							<div class="col-md-10 col-sm-10">
-								<div class="company-content">
-									<h3>IOS developer<span class="internship">Intership</span></h3>
-									<p><span class="company-name"><i class="fa fa-briefcase"></i>LA Lakers</span><span class="company-location"><i class="fa fa-map-marker"></i> 8th Avenue, Los Angeles, California, United States</span><span class="package"><i class="fa fa-money"></i>$24,000-$52,000</span></p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="company-list">
-						<div class="row">
-							<div class="col-md-2 col-sm-2">
-								<div class="company-logo">
-									<img src="img/twitter.png" class="img-responsive" alt="" />
-								</div>
-							</div>
-							<div class="col-md-10 col-sm-10">
-								<div class="company-content">
-									<h3>Marketing Holder<span class="full-time">Full Time</span></h3>
-									<p><span class="company-name"><i class="fa fa-briefcase"></i>Twitter</span><span class="company-location"><i class="fa fa-map-marker"></i> 4th Avenue, New York, NY, United States</span><span class="package"><i class="fa fa-money"></i>$24,000-$48,000</span></p>
-								</div>
-							</div>
-						</div>
-					</div>
+			<div class="container">
+				<div class="row heading">
+					<h2>Trabajos Populares</h2>
+					<p>Empresas populares estan buscando personal...</p>
 				</div>
-			<div class="row">
-				<input type="button" class="btn brows-btn" value="Brows All Jobs" />
+				<div class="companies">
+				@foreach($trabajos as $trabajo)
+					<div class="company-list">
+						<div class="row">
+							<div class="col-md-2 col-sm-2">
+								<div class="company-logo">
+									<img src="{{ asset($trabajo->logo) }}" class="img-responsive" alt="" />
+								</div>
+							</div>
+							<div class="col-md-10 col-sm-10">
+								<div class="company-content">
+									<h3>{{ $trabajo->nombre }}<span class="full-time">{{ $trabajo->tiempo }}</span></h3>
+									<p><span class="company-name"><i class="fa fa-briefcase"></i>{{ $trabajo->empresa }}</span><span class="company-location"><i class="fa fa-map-marker"></i> {{ $trabajo->direccion }} </span><span class="package"><i class="fa fa-money"></i>{{ $trabajo->salario }}</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					@endforeach
+					
+				<div class="row">
+					<input type="button" class="btn brows-btn" value="Mas trabajos" />
+				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
 
 

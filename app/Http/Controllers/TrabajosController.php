@@ -13,7 +13,9 @@ class TrabajosController extends Controller
      */
     public function index()
     {
-        //
+        $trabajos = Trabajo::all();
+
+        return view('companies', compact('trabajos'));
     }
 
     /**
@@ -22,11 +24,11 @@ class TrabajosController extends Controller
     public function create()
     {
         $trabajo = new Trabajo;
-        $trabajo->logo = "img/uber-logo.png";
-        $trabajo->nombre = "IOS Developer";
-        $trabajo->empresa = "Uber";
-        $trabajo->direccion = "535 Mission St, San Fransisco, California, United States";
-        $trabajo->salario = 30.000;
+        $trabajo->logo = "img/twitter.png";
+        $trabajo->nombre = "Marketing Holder";
+        $trabajo->empresa = "Twitter";
+        $trabajo->direccion = "4th Avenue, New York, NY, United States";
+        $trabajo->salario = 32000;
         $trabajo->tiempo = "Full Time";
         $trabajo->save();
     }
