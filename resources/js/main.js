@@ -11,7 +11,7 @@ window.addEventListener('load',function(){
 
 	let imagenes = [];
 
-	imagenes[0]= "img/cowork.png";
+	imagenes[0]= "img/cowork.jpg";
 	imagenes[1]= "img/office.jpg";
 	imagenes[2]= "img/keepmotivated.jpg";
 
@@ -194,6 +194,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+/* 
 // Ocultar login y registro.
 function hideElementIfLogged() {
 	if (localStorage.getItem('isLogged') === 'true') {
@@ -218,3 +219,4 @@ showElement ? showElement.addEventListener('click', ()=> {
 	return window.location.href = 'index.html';
 	// console.log('Sesión eliminada.')
 }) : false;
+ */
