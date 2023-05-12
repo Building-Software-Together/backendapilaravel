@@ -25,7 +25,7 @@ Route::get('/', function () {
 
 Route::get('/characters', function () {
     return view('characters');
-});
+})->middleware(['auth', 'verified'])->name('characters');
 
 Route::get('/browse-job', function () {
     return view('browse-job');

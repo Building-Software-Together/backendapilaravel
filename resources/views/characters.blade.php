@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="{{ asset('js/main.js') }}"></script>
 
+    @vite('resources/js/main.js', 'public/css/main.css')
+		@vite('resources/js/bootstrap.min.js')
+		@vite('public/css/plugins.css')
     <!-- All Plugin Css -->
 
     <link rel="stylesheet" type="text/css" href="{{ url('/css/apicharacters.css') }}" />
@@ -50,11 +53,22 @@
             data-in="fadeInDown"
             data-out="fadeOutUp"
           >
-            <li id="thehome"><a href="/">Inicio</a></li>
-				<li id="session-li"><a href="login">Iniciar Sesión</a></li>
-				<li id="companiesP"><a href="trabajos">Compañias</a></li>
-				<li id="premium"><a href="characters">Trabajos Premium</a></li>
-				<li id="logoutfrom"><a href="/">Cerrar Sesión</a></li>
+          <li id="thehome"><a href="/">Inicio</a></li>
+							@guest
+							<li id="session-li"><a href="login">Iniciar Sesión</a></li>
+							@endguest
+							<li id="companiesP"><a href="trabajos">Compañias</a></li>
+							<li id="premium"><a href="characters">Trabajos Premium</a></li>
+							@auth
+							<li id="perfil"><a href="dashboard">Perfil</a></li>
+							<li id="logoutfrom">
+							<form method="POST" action="{{ route('logout') }}">
+                            @csrf
+								<a href="route('logout')"
+								onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                                {{ __('Log Out') }}</a></form></li>
+							@endauth
           </ul>
         </div>
         <!-- /.navbar-collapse -->

@@ -13,9 +13,9 @@ class TrabajosController extends Controller
      */
     public function index()
     {
-        $trabajos = Trabajo::all();
+       // $trabajos = Trabajo::all();
 
-        return view('companies', compact('trabajos'));
+        return view('companies', ["trabajos"=>Trabajo::all()]);
     }
 
     /**
@@ -25,11 +25,11 @@ class TrabajosController extends Controller
     {
         $trabajo = new Trabajo;
         $trabajo->logo = "img/twitter.png";
-        $trabajo->nombre = "Marketing Holder";
+        $trabajo->nombre = "ingeniero sistemas";
         $trabajo->empresa = "Twitter";
-        $trabajo->direccion = "4th Avenue, New York, NY, United States";
-        $trabajo->salario = 32000;
-        $trabajo->tiempo = "Full Time";
+        $trabajo->direccion = "cr 50 barrio xx";
+        $trabajo->salario = 50000;
+        $trabajo->tiempo = "tiempo completo";
         $trabajo->save();
     }
 

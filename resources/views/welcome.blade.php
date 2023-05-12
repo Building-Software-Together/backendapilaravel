@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		@vite('resources/js/main.js')
+		@vite('resources/js/main.js', 'public/css/main.css')
 		@vite('resources/js/bootstrap.min.js')
 		@vite('public/css/plugins.css')
 
