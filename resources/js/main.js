@@ -194,6 +194,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+/* 
 // Ocultar login y registro.
 function hideElementIfLogged() {
 	if (localStorage.getItem('isLogged') === 'true') {
@@ -218,3 +219,4 @@ showElement ? showElement.addEventListener('click', ()=> {
 	return window.location.href = 'index.html';
 	// console.log('Sesión eliminada.')
 }) : false;
+ */

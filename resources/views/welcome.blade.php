@@ -55,10 +55,22 @@
 				<div class="collapse navbar-collapse" id="navbar-menu">
 					<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
 							<li id="thehome"><a href="/">Inicio</a></li>
+							@guest
 							<li id="session-li"><a href="login">Iniciar Sesión</a></li>
+							@endguest
 							<li id="companiesP"><a href="trabajos">Compañias</a></li>
 							<li id="premium"><a href="characters">Trabajos Premium</a></li>
-							<li id="logoutfrom"><a href="/">Cerrar Sesión</a></li>
+							@auth
+							<li id="perfil"><a href="dashboard">Perfil</a></li>
+							<li id="logoutfrom">
+							<form method="POST" action="{{ route('logout') }}">
+                            @csrf
+								<a href="route('logout')"
+								onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                                {{ __('Log Out') }}</a></form></li>
+							@endauth
+
 
 					</ul>
 				</div><!-- /.navbar-collapse -->
